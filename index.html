@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="page">
+
+            <span class="menu_toggle">
+                <i class="menu_open fa fa-bars fa-lg"></i>
+                <i class="menu_close fa fa-times fa-lg"></i>
+            </span>
+
+            <ul class="menu_items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tourism</a></li>
+                <li><a href="#">Galery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><form name="search">
+                <label class="search-box">
+                  <input type="text" />
+                  <span></span>
+                </label></li>
+                <li><p>Citra Nusantara</p></li>
+            </ul>
+
+            
+            <main class="content">
+                
+                <div class="content_inner">
+                    <div class="top"></div>
+                </div>
+            </main>
+        </div>
+
+        <script type="text/javascript">
+        
+        var $page = $('.page');
+
+        $('.menu_toggle').on('click', function() {
+            $page.toggleClass('shazam');
+        });
+
+        $('.content').on('click', function() {
+            $page.removeClass('shazam');
+        });
+        </script>
+    </body>
+</html>
